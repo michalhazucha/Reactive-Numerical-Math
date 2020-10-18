@@ -14,7 +14,7 @@ const Bisekcia = () => {
     value = round(value, 4)
     return value;
   }
-    let i:number=0;
+   let i:number=0;
   const bisection = (func: string | any, a: number | any, b: number | any, E: number | any) => {
     E = pow(10, -E);
     console.log(E);
@@ -50,7 +50,8 @@ const Bisekcia = () => {
     return vysledok;
   }
   return (
-      <Fragment>
+    <Fragment>
+      <h1>Bisekcia</h1>
       <div>
        Výsloedok je {bisection('x-cos x', 0.7, 0.8, 2)};
       </div>
