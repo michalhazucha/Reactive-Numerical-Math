@@ -41,13 +41,16 @@ const Babylon = ({ S, x0, dm }: BabylonProps): any => {
   useEffect(() => { babylon(S, x0, dm) }, []);
   return (
     <div className="Babylon">
-      <div className="row">
+      .<div className="container-fluid">
+        <div className="row">
             <h1>Babylónska Metóda</h1>
       </div>
       <div className="row">
-        <p className="display-1"> Druhá odmocnina čísla {S} je pri požadovanej presnosti na <strong className="display-2">{dm}</strong> desatiních miest číslo <strong className="display-1">{vysledok}</strong>. Pri zadanej približnej hodnote  <strong className="display-1">x0={x0}</strong> sme na zistenie výsledku museli vykonať <strong className="display-1">{i} {i == 0 || i > 4 ?'iterácií':i==1?'iteráciu':'iterácie'}</strong>
+        <p > Druhá odmocnina čísla {S} je pri požadovanej presnosti na <strong >{dm}</strong> desatiních miest číslo <strong >{vysledok}</strong>. Pri zadanej približnej hodnote  <strong >x0={x0}</strong> sme na zistenie výsledku museli vykonať       <strong >{i} {i == 0 || i > 4 ?'iterácií':i==1?'iteráciu':'iterácie'}</strong>
         </p>
       </div>
+      </div>
+      
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { round } from 'mathjs';
 import Babylon from './components/Babylon';
 import Bisekcia from './components/Bisekcia';
@@ -30,10 +30,14 @@ const App = () => {
     <div className="App">
       <div className="container-fluid">
         <div className="row">
-          <div className="col"><Babylon S={50} x0={7} dm={8} /></div>
-      {/*    <div className="col"><Bisekcia/></div>
-  */}          <div className="col"><RegulaFalsi/></div>
-        .</div></div>
+          <div className="col-2"></div>
+              <div className="col-8"><div ><Babylon S={50} x0={7} dm={8} /></div>
+          <div ><Bisekcia/></div>
+            <div ><RegulaFalsi func='x-cosx' a={0.7} b={0.8} E={5} /></div></div>
+            
+          <div className="col-2"></div>  
+        </div>
+      </div>
     </div>
   );
 }
